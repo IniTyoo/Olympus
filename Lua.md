@@ -88,8 +88,37 @@ removeHooks() -- ❌ Remove all hooks
 
 ```lua
 request(string method, string url) -- 📡 Send a HTTP request
-sendDiscordWebhook(string url, string message) -- 📡 Send a message to a Discord webhook
+sendWebhook(string webhook, string json) -- 📡 Send a message to a Discord webhook
 ```
+Example Webhook
+```lua
+local payload = [[{
+    "content": "",
+    "embeds": [{
+        "title": "ytta",
+        "description": "ytta :flushed:",
+        "url": "https://avatarfiles.alphacoders.com/334/334449.png",
+        "color": 5814783,
+        "fields": [{
+            "name": "Introduction",
+            "value": "My name is Walter Hartwell White. I live at 308 Negra Arroyo Lane Albuquerque New Mexico 87104. This is my confession."
+        }],
+        "author": {
+            "name": "kontol",
+            "url": "https://avatarfiles.alphacoders.com/334/334449.png",
+            "icon_url": "https://avatarfiles.alphacoders.com/334/334449.png"
+        },
+        "footer": {
+            "text": "sended from growpai",
+            "icon_url": "https://copypastatext.com/wp-content/uploads/2021/12/index-14.jpg"
+        },
+        "timestamp": "2023-02-14T17:00:00.000Z"
+    }]
+}]]
+local webhook = ""
+SendWebhook(webhook, payload)```
+
+
 
 ## 📡 Proxy
 
