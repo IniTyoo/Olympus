@@ -116,7 +116,8 @@ local payload = [[{
     }]
 }]]
 local webhook = ""
-SendWebhook(webhook, payload)```
+SendWebhook(webhook, payload)
+```
 
 
 
