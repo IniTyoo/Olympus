@@ -159,6 +159,7 @@ Tile.ready
 Tile.flags
 Tile.x
 Tile.y
+Tile.extra -- Returns an extra tile such as fire or water
 ```
 ### 🎮 Object Information
 ```lua
@@ -207,4 +208,4 @@ ItemInfo.rarity
 ItemInfo.growTime
 ItemInfo.breakHit
 ItemInfo.clothingType
-ItemInfo.collis
+ItemInfo.collisionType
