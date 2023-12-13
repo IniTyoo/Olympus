@@ -126,6 +126,7 @@ SendWebhook(webhook, payload)
 ```lua
 setProxy(string ip, int port) -- 🌐 Set the bot's proxy
 setProxyAuth(string username, string password) -- 🔐 Set the bot's proxy authentication
+setProxyAuth((string ip, int port, string username, string password) -- 🧩 Set the bot's proxy and the authentication
 ```
 
 ## 📄 Information
@@ -147,6 +148,7 @@ Bot.slots
 Bot.captcha
 Bot.proxy
 Bot.proxyStatus
+Bot.ip
 ```
 ### 🌐 Tile Information
 ```lua
@@ -177,6 +179,7 @@ getPlayers() -- 📂 Get all players
 Player = {} -- 📂 Represents a player
 Player.name
 Player.netid
+Player.ip
 Player.userid
 Player.country
 Player.x
