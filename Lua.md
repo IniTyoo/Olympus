@@ -10,9 +10,11 @@ getPing() -- 📶 Get current ping
 connect() -- 🔗 Connect bot to game
 disconnect() -- 🔓 Disconnect bot from game
 runThread(function) -- 🧵 Run a function in a new thread
+setBool(string option, bool value) -- ✅ Set the option to true or false
 setJob(string jobname) -- 👷 Set the bot's job
 setRid(string rid) -- 🔧 Set the bot's RID
 setMac(string mac) -- 💻 Set the bot's MAC address
+setNumber(string option, int number) -- 🔢 Set the option to a number
 getRid() -- 🧰 Get the bot's RID
 getMac() -- 🖥️ Get the bot's MAC address
 ```
